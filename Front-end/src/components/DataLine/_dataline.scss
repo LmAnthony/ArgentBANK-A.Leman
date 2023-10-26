@@ -1,0 +1,60 @@
+.dataLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 90%;
+    height: 50px;
+    color: black;
+    border: 1px black solid;
+    margin: 0 auto -10px auto;
+ }
+ 
+ .downArrow_no {
+    display: none;
+ }
+ 
+ .upArrow {
+    display: none;
+ }
+ 
+ .upArrow_yes {
+    display: block;
+ }
+ .moreInfo {
+    display: none;
+    background: #12002b;
+    width: 90%;
+    max-height: 0px;
+    overflow: hidden;
+    color: black;
+    text-align: left;
+    padding: 5px 0;
+    margin: 0 auto;
+ 
+    transition: max-height 1s;
+ }
+ 
+ .moreInfo_open {
+    display: block;
+    background: white;
+    border-color: black;
+    width: 80%;
+    max-height: 150px;
+    overflow: hidden;
+    color: black;
+    text-align: left;
+    padding: 5px 0 5px 10%;
+    margin: 0 auto;
+ }
+ 
+ .sheen-btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px #000;
+ }
+ 
+ .sheen-btn:hover {
+    cursor: pointer;
+    background-color: #09d087;
+ }

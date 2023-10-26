@@ -1,0 +1,40 @@
+
+.header {
+   margin-top: 1.5em;
+    margin-bottom: 2rem;
+    h1{
+      color: black;
+      font-weight: 400;
+      font-size: 26px;
+    }
+ }
+// 2 inputs style when we click on "edit name"
+ .zone-edit {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-bottom: -15px;
+   input{
+      margin: 1em;
+      padding: 8px 12px;
+      box-sizing: border-box;
+   }
+ }
+ .edit-btn {
+    display: flex;
+    justify-content: center;
+    button{
+      margin: 1em;
+    }
+ }
+ .sheen-btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+ }
+ 
+ .sheen-btn:hover {
+    cursor: pointer;
+    background-color: #4b3de9;
+ }
+ 

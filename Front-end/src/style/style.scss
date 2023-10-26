@@ -1,0 +1,17 @@
+// imports SCSS pages
+@import "../pages/Dashboard/dashboard";
+@import "../pages/Home/home";
+@import "../pages/SignIn/signin";
+@import "../pages/Transaction/transaction";
+
+// imports SCSS components
+@import "../components/Layout/header";
+@import "../components/Layout/footer";
+@import "../components/Account/account";
+@import "../components/DataLine/dataline";
+@import "../components/Features/features";
+@import "../components/Profil/profil";
+@import "../components/TransTitle/transtitle";
+
+// all.scss
+@import "./all";

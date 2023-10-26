@@ -1,0 +1,576 @@
+.main {
+  position: absolute;
+  top: 7%;
+  bottom: 5%;
+  flex: 1;
+  overflow: auto;
+  margin-bottom: 2em;
+}
+
+.bg-dark {
+  width: 100%;
+  background-color: #dfe6ed;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+.hero {
+  background-image: url("./../assets/img/bank-tree.webp");
+  background-position: 0 -50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  top: 2rem;
+  width: 200px;
+  background: white;
+  padding: 2rem;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.hero-content .subtitle {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.hero-content .text {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 920px) {
+  .hero {
+    height: 420px;
+    background-position: 0% 33%;
+  }
+  .hero-content {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 300px;
+    margin: 2rem;
+  }
+  .hero-content .subtitle {
+    font-size: 1.5rem;
+  }
+  .hero-content .text {
+    font-size: 1.2rem;
+  }
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.sign-in-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-color: #6458f5;
+  background-color: #6458f5;
+  color: #fff;
+}
+
+.sign-in-button:hover {
+  background-color: #4637ec;
+}
+
+.sign-in-content {
+  box-sizing: border-box;
+  background-color: white;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.sign-in-icon {
+  font-size: 5rem;
+}
+
+.input-remember {
+  display: flex;
+}
+
+.input-remember label {
+  margin-left: 0.25rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper label {
+  font-weight: bold;
+}
+
+.input-wrapper input {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.err-mes {
+  color: red;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+#transpage {
+  padding: 150px 0 40px 0;
+}
+
+.dataHead {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 25px;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+#arrow {
+  width: 5%;
+}
+
+#arrow:hover,
+.pencil:hover {
+  cursor: pointer;
+}
+
+#date {
+  width: 25%;
+}
+
+#descr {
+  width: 30%;
+}
+
+#amount,
+#balance {
+  width: 20%;
+}
+
+@media (max-width: 500px) {
+  #date, #descr, #amount, #balance {
+    font-size: 11.5px;
+  }
+  .moreInfo p {
+    font-size: 12px;
+    margin: 0.5em;
+  }
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.main-nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.main-nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+.main-nav-item {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.main-nav-item:hover {
+  text-decoration: underline;
+}
+
+.main-nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-logo-image {
+  max-width: 100%;
+  width: 200px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  padding: 2rem 0 1.5rem;
+  background-color: #fff;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.account-amount {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.account-amount-description {
+  margin: 0;
+}
+
+.account-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.account-content-wrapper {
+  width: 100%;
+  flex: 1;
+}
+
+.edit-button {
+  border-color: rgba(100, 88, 245, 0.5);
+  background-color: white;
+  color: #6458f5;
+  font-weight: 500;
+  padding: 6px 35px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.edit-button:hover {
+  background-color: rgb(241, 241, 241);
+  cursor: pointer;
+}
+
+.account-button-link {
+  text-decoration: none;
+}
+
+.transaction-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-color: #6458f5;
+  background-color: rgb(100, 88, 245);
+  color: #fff;
+}
+
+.dataLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 90%;
+  height: 50px;
+  color: black;
+  border: 1px black solid;
+  margin: 0 auto -10px auto;
+}
+
+.downArrow_no {
+  display: none;
+}
+
+.upArrow {
+  display: none;
+}
+
+.upArrow_yes {
+  display: block;
+}
+
+.moreInfo {
+  display: none;
+  background: #12002b;
+  width: 90%;
+  max-height: 0px;
+  overflow: hidden;
+  color: black;
+  text-align: left;
+  padding: 5px 0;
+  margin: 0 auto;
+  transition: max-height 1s;
+}
+
+.moreInfo_open {
+  display: block;
+  background: white;
+  border-color: black;
+  width: 80%;
+  max-height: 150px;
+  overflow: hidden;
+  color: black;
+  text-align: left;
+  padding: 5px 0 5px 10%;
+  margin: 0 auto;
+}
+
+.sheen-btn {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.sheen-btn:hover {
+  cursor: pointer;
+  background-color: #09d087;
+}
+
+@media (min-width: 920px) {
+  .features {
+    flex-direction: row;
+  }
+}
+.feature-icon {
+  width: 100px;
+  border: 10px solid #00bc77;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.feature-item {
+  flex: 1;
+  padding: 2.5rem;
+}
+
+.feature-item-title {
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.header {
+  margin-top: 1.5em;
+  margin-bottom: 2rem;
+}
+.header h1 {
+  color: black;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.zone-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -15px;
+}
+.zone-edit input {
+  margin: 1em;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.edit-btn {
+  display: flex;
+  justify-content: center;
+}
+.edit-btn button {
+  margin: 1em;
+}
+
+.sheen-btn {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.sheen-btn:hover {
+  cursor: pointer;
+  background-color: #4b3de9;
+}
+
+.titleSection {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 5;
+  position: fixed;
+  background-color: white;
+}
+
+.titleSection-content-wrapper {
+  width: 100%;
+  flex: 1;
+}
+
+.titleSection-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.titleSection-amount {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.titleSection-amount-description {
+  margin: 0;
+}
+
+html {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  position: relative;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+svg {
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  transform: translate(-60%, -55%);
+  width: 100%;
+  max-width: 10rem;
+  animation: rotate 3.6s linear infinite;
+}
+
+circle {
+  fill: none;
+  stroke: #00bc77;
+  stroke-width: 8px;
+  stroke-dasharray: 300;
+  animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
+}
+
+@keyframes outline {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 300;
+  }
+  100% {
+    stroke-dashoffset: 600;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}
+@media (min-width: 720px) {
+  .account {
+    flex-direction: row;
+  }
+  .account-content-wrapper.cta {
+    flex: 0;
+  }
+  .transaction-button {
+    width: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */

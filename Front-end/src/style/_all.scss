@@ -1,0 +1,119 @@
+html {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+ }
+ 
+ body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+       'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+       'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+       monospace;
+ }
+ 
+ .App {
+    position: relative;
+    text-align: center;
+ }
+ 
+ .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+ }
+ 
+ @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+       animation: App-logo-spin infinite 20s linear;
+    }
+ }
+ 
+ .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+ }
+ 
+ .App-link {
+    color: #61dafb;
+ }
+ 
+ @keyframes App-logo-spin {
+    from {
+       transform: rotate(0deg);
+    }
+    to {
+       transform: rotate(360deg);
+    }
+ }
+ 
+ svg {
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    transform: (translate(-60%, -55%));
+    width: 100%;
+    max-width: 10rem;
+    animation: rotate 3.6s linear infinite;
+ }
+ 
+ circle {
+    fill: none;
+    stroke: #00bc77;
+    stroke-width: 8px;
+    stroke-dasharray: 300;
+    animation: outline 2s cubic-bezier(0.77, 0, 0.18, 1) infinite;
+ }
+ 
+ @keyframes outline {
+    0% {
+       stroke-dashoffset: 0;
+    }
+    50% {
+       stroke-dashoffset: 300;
+    }
+    100% {
+       stroke-dashoffset: 600;
+    }
+ }
+ 
+ @keyframes rotate {
+    from {
+       transform: rotate(0turn);
+    }
+    to {
+       transform: rotate(-1turn);
+    }
+ }
+ 
+ @media (min-width: 720px) {
+    .account {
+       flex-direction: row;
+    }
+ 
+    .account-content-wrapper.cta {
+       flex: 0;
+    }
+ 
+    .transaction-button {
+       width: 200px;
+    }
+ }
