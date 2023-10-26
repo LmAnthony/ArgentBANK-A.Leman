@@ -1,3 +1,5 @@
+![ArgentBank](/Front-end/src/assets/img/argentBankLogo.webp)
+
 # ArgentBANK-A.Leman
 
 ## Description FR :
