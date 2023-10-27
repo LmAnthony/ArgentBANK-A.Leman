@@ -8,13 +8,13 @@ const getToken = async (email, password) => {
       const response = await axios.post('/login', { email, password });
       return response.data.body.token;
    } catch (error) {
-      if (error.response && error.response.status === 400) {
-         console.error("L'identifiant ou le mot de passe fourni est incorrect.");
+      if (error.response?.status === 400) {
+         console.error("The provided username or password is incorrect.");
       } else {
-         console.error("Une erreur s'est produite lors de la demande du token.");
+         console.error("An error occurred while requesting the token.");
       }
       throw error; // Re-throw the error to handle it higher up if needed.
-   }
+   }   
 };
 // Send a request to fetch user information.
 const userData = async () => {
@@ -22,10 +22,10 @@ const userData = async () => {
       const response = await axios.post('/profile');
       return response.data.body;
    } catch (error) {
-      if (error.response && error.response.status === 401) {
-         console.error("Votre session a expiré, veuillez vous reconnecter.");
+      if (error.response?.status === 401) {
+         console.error("Your session has expired, please log in again.");
       } else {
-         console.error("Une erreur s'est produite lors de la demande des informations de l'utilisateur.");
+         console.error("An error occurred while updating user information.");
       }
       throw error; // Re-throw the error to handle it higher up if needed.
    }
@@ -35,10 +35,10 @@ const userEdit = async (userName) => {
    try {
       await axios.put('/profile', { userName });
    } catch (error) {
-      if (error.response && error.response.status === 401) {
-         console.error("Votre session a expiré, veuillez vous reconnecter.");
+      if (error.response?.status === 401) {
+         console.error("Your session has expired, please log in again.");
       } else {
-         console.error("Une erreur s'est produite lors de la mise à jour des informations de l'utilisateur.");
+         console.error("An error occurred while updating user information.");
       }
       throw error; // Re-throw the error to handle it higher up if needed.
    }
