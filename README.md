@@ -4,7 +4,7 @@
 
 ## Description FR :
 
-PROJET 11 ArgentBANK - in React, 'formation Développeur Front-end' chez [OpenClassrooms]
+PROJET 11 ArgentBANK - {React}, 'Formation Intégrateur Web' chez [OpenClassrooms]
 
 ### Installation et lancement du Back-end :
 
