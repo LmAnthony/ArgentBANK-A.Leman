@@ -1,6 +1,6 @@
 ![ArgentBank](/Front-end/src/assets/img/argentBankLogo.webp)
 
-# ArgentBANK-A.Leman
+# Argent Bank L. Anthony
 
 ## Description FR :
 
